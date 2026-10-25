@@ -27,7 +27,8 @@
         "en_glissando_02"
       ],
       "composite": [
-        "en_combo_01"
+        "en_combo_01",
+        "en_combo_04"
       ]
     }
   },
@@ -550,6 +551,33 @@
       "sha256": "4e4db5df09da806c757d1dd4c1cc927617f3c0fbe20d144bfa16528b61c0a8bf",
       "duration_seconds": 8.837333,
       "questionnaire_path": "media/cases/en_combo_01/cand_7963932186e6b4.wav"
+    },
+    {
+      "case_id": "en_combo_04",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_combo_04/source.wav",
+      "sha256": "ceeedb390c841a593fb9a553a173be4e0e589508ee5afcec7d2ea43e81de3efe",
+      "duration_seconds": 9.580021,
+      "questionnaire_path": "media/cases/en_combo_04/source.wav"
+    },
+    {
+      "case_id": "en_combo_04",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_combo_04/prosing.wav",
+      "sha256": "e818456059cb4e295f5d22ac0d527bd80fdd1c1748601082feac594378c64b5b",
+      "duration_seconds": 9.6,
+      "questionnaire_path": "media/cases/en_combo_04/cand_8b309e09cc6e88.wav"
+    },
+    {
+      "case_id": "en_combo_04",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_combo_04/tcsinger.wav",
+      "sha256": "8fb141de269642c7b0b4d2522e6c84f615c87d83112750ae0ee8296c9f57233f",
+      "duration_seconds": 8.026667,
+      "questionnaire_path": "media/cases/en_combo_04/cand_bb3385197f2766.wav"
     }
   ]
 }

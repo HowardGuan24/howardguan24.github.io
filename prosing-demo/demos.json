@@ -168,6 +168,22 @@
             "provenance": "custom-audio/english-vibrato40/provenance.json"
           }
         }
+      },
+      {
+        "case_id": "en_combo_04",
+        "title": "Pharyngeal voice + vibrato",
+        "family": "Overlapping techniques",
+        "scope": "Selected phrase & word ending",
+        "lyric_parts": [
+          {"text": "I will always "},
+          {"text": "love", "technique": "pharyngeal voice"},
+          {"text": " "},
+          {"text": "you", "technique": "pharyngeal voice; vibrato on the final third"}
+        ],
+        "instructions": [
+          "“Love you”: pharyngeal voice.",
+          "Final third of “you”: additionally apply vibrato with a ±20-cent extent at 5 Hz."
+        ]
       }
     ]
   }
