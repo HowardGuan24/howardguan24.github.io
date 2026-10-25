@@ -48,9 +48,11 @@ def render_case(case: dict[str, Any], audio: dict[str, str], number: int, langua
     instructions = ''.join(f'<li>{escape(line)}</li>' for line in case['instructions'])
     primary_audio = render_player(audio['source'], 'Source', case['case_id'])
     primary_audio += render_player(audio['prosinger'], 'ProSing (ours)', case['case_id'], True)
-    baseline_audio = ''.join(
-        render_player(audio[method], MODEL_LABELS[method], case['case_id'])
-        for method in ('tcsinger', 'vevo') if method in audio
+    primary_audio += render_player(audio['tcsinger'], 'TCSinger', case['case_id'])
+    vevo_comparison = (
+        '<details class="baseline-comparisons"><summary>Compare with Vevo</summary>'
+        f'<div class="audio-pair">{render_player(audio["vevo"], "Vevo", case["case_id"])}</div></details>'
+        if 'vevo' in audio else ''
     )
     baseline_note = (
         f'<p class="listening-note">{escape(case["baseline_note"])}</p>'
@@ -62,8 +64,9 @@ def render_case(case: dict[str, Any], audio: dict[str, str], number: int, langua
   <span class="sample-scope">{escape(case['scope'])}</span>
 {lyrics}
   <ul class="sample-instructions">{instructions}</ul>
-  <div class="audio-pair">{primary_audio}</div>
-  <details class="baseline-comparisons"><summary>Compare with baselines</summary>{baseline_note}<div class="audio-pair">{baseline_audio}</div></details>
+  <div class="audio-pair main-comparison">{primary_audio}</div>
+{baseline_note}
+{vevo_comparison}
 </article>'''
 
 
@@ -155,9 +158,9 @@ def main() -> None:
   <div><h2 id="demos-title">Listening guide</h2>
     <p>The {sample_count} examples below demonstrate single-technique and multi-technique control in Chinese and English. Both language sets are shown in full on this page.</p>
     <ol class="listening-steps">
-      <li>Listen to <strong>Source</strong>, then <strong>ProSing (ours)</strong>, to compare the original and converted performances.</li>
+      <li>Listen to <strong>Source</strong>, then compare <strong>ProSing (ours)</strong> and the <strong>TCSinger</strong> baseline directly below it.</li>
       <li>Read the instruction above each player. Highlighted lyrics identify locally edited regions; “Entire excerpt” means the technique is requested throughout the clip.</li>
-      <li>Open <strong>Compare with baselines</strong> to hear TCSinger and, where available, Vevo without leaving the page.</li>
+      <li>Single-technique examples also include <strong>Vevo</strong>. Open <strong>Compare with Vevo</strong> to hear this additional baseline without leaving the page.</li>
     </ol>
     <p class="listening-note">Headphones are recommended. Playing a new recording pauses the previous one. Pitch-control values describe the requested command, not a measurement of the generated output.</p>
   </div>

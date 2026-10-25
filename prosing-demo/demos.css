@@ -53,6 +53,8 @@
 .sample-instructions li + li { margin-top: 5px; }
 .audio-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .demo-card > .audio-pair { margin-top: auto; }
+.main-comparison > .audio-player:first-child { grid-column: 1 / -1; }
+.demo-card > .listening-note { margin: 15px 0 0; font-size: 12px; color: var(--muted); }
 .audio-player { min-width: 0; border-top: 1px solid #d8d9cf; padding-top: 11px; }
 .audio-player-primary { border-top: 2px solid var(--accent); padding-top: 10px; }
 .audio-label { display: block; margin-bottom: 9px; font-size: 12px; font-weight: 600; color: var(--muted); }
@@ -61,7 +63,7 @@
 .baseline-comparisons { margin-top: 19px; border-top: 1px solid var(--line); padding-top: 14px; }
 .baseline-comparisons summary { cursor: pointer; color: var(--muted); font-size: 12px; }
 .baseline-comparisons summary:hover { color: var(--accent); }
-.baseline-comparisons .audio-pair { margin-top: 15px; }
+.baseline-comparisons .audio-pair { margin-top: 15px; grid-template-columns: 1fr; }
 .baseline-comparisons .audio-player { border-top: 0; padding-top: 0; }
 .language-demos + .language-demos { margin-top: 75px; }
 .language-demos-pending .language-heading { border-top-color: var(--line); }
