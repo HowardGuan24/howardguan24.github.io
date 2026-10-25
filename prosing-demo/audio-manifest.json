@@ -1,0 +1,297 @@
+{
+  "questionnaire_repository": "HowardGuan24/prosinger-blind-listening",
+  "questionnaire_revision": "1ec7e215e59a90fd06ba518b711e4306b72561f9",
+  "note": "Byte-identical copies of selected questionnaire audio; no cropping, resampling, or gain changes.",
+  "selection": {
+    "chinese": {
+      "single": [
+        "pharyngeal_06",
+        "breathy_03",
+        "mix_05",
+        "falsetto_01",
+        "vibrato_04",
+        "gliss_03_hei"
+      ],
+      "composite": [
+        "combo_02_gumeng",
+        "combo_08_luoyeguigen"
+      ]
+    },
+    "english": {
+      "single": [],
+      "composite": []
+    }
+  },
+  "audio_files": [
+    {
+      "case_id": "pharyngeal_06",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/pharyngeal_06/source.wav",
+      "sha256": "0a9c094a57f613fc89ae1841c38ae0beb01a6a6e6ea8329d00586bb6c1b2365e",
+      "duration_seconds": 5.665669,
+      "questionnaire_path": "media/cases/pharyngeal_06/source.wav"
+    },
+    {
+      "case_id": "pharyngeal_06",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/pharyngeal_06/prosing.wav",
+      "sha256": "9f8fb97c8113b10f874fd016325257522d51e8fa1e0d4743172ed55a83b67380",
+      "duration_seconds": 5.68,
+      "questionnaire_path": "media/cases/pharyngeal_06/cand_bdf74f40b1716e.wav"
+    },
+    {
+      "case_id": "pharyngeal_06",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/pharyngeal_06/tcsinger.wav",
+      "sha256": "623776b66186915591ec6755d58df95e4cfc3514f25584980df43f9ec2fcb7c9",
+      "duration_seconds": 3.658667,
+      "questionnaire_path": "media/cases/pharyngeal_06/cand_9bb5c4b8a58248.wav"
+    },
+    {
+      "case_id": "pharyngeal_06",
+      "language": "zh",
+      "model": "vevo",
+      "path": "audio/zh/pharyngeal_06/vevo.wav",
+      "sha256": "13acf3b4d9270515cb8cb2ab2ce206061dc3d7e48acc0bc51769d652b4d81139",
+      "duration_seconds": 5.72,
+      "questionnaire_path": "media/cases/pharyngeal_06/cand_b1678c8c47d16b.wav"
+    },
+    {
+      "case_id": "breathy_03",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/breathy_03/source.wav",
+      "sha256": "d3f9d9098c6c5d391b8920e892df433709a5ba79119e2115d04a947166d611ba",
+      "duration_seconds": 6.176508,
+      "questionnaire_path": "media/cases/breathy_03/source.wav"
+    },
+    {
+      "case_id": "breathy_03",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/breathy_03/prosing.wav",
+      "sha256": "c2802c0e9afaf2fae16fabada83a325aeae6973b9d3a4c77d2129c3326fa1476",
+      "duration_seconds": 6.18,
+      "questionnaire_path": "media/cases/breathy_03/cand_d1bb635e85ddac.wav"
+    },
+    {
+      "case_id": "breathy_03",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/breathy_03/tcsinger.wav",
+      "sha256": "d1446cf3d9a636b37698f757720bd38ea4826a7a1c55e654e882e39736f28b62",
+      "duration_seconds": 4.917333,
+      "questionnaire_path": "media/cases/breathy_03/cand_56dcc84e9368e9.wav"
+    },
+    {
+      "case_id": "breathy_03",
+      "language": "zh",
+      "model": "vevo",
+      "path": "audio/zh/breathy_03/vevo.wav",
+      "sha256": "ad8e7b10d7a4755b711d96d103289ebe7eac4d0439d7188d5c2bb9a9bc404612",
+      "duration_seconds": 6.12,
+      "questionnaire_path": "media/cases/breathy_03/cand_bcc4ea22062f8e.wav"
+    },
+    {
+      "case_id": "mix_05",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/mix_05/source.wav",
+      "sha256": "bf0ec3862c119a829fb43abaf065dca0ec1a7cefa8be7e7d01f60c17dcc16cc9",
+      "duration_seconds": 6.455147,
+      "questionnaire_path": "media/cases/mix_05/source.wav"
+    },
+    {
+      "case_id": "mix_05",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/mix_05/prosing.wav",
+      "sha256": "367fbf2aa0515266b0920dc9075d5ff06e0a7567b5e48435cdde4e0f76a22cee",
+      "duration_seconds": 6.46,
+      "questionnaire_path": "media/cases/mix_05/cand_cf78b0883e40cb.wav"
+    },
+    {
+      "case_id": "mix_05",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/mix_05/tcsinger.wav",
+      "sha256": "3a72f5fcd23364735f032a8abd22009ec45dec80efe05a320e99ac5504036071",
+      "duration_seconds": 4.570667,
+      "questionnaire_path": "media/cases/mix_05/cand_ec736f5650ffef.wav"
+    },
+    {
+      "case_id": "mix_05",
+      "language": "zh",
+      "model": "vevo",
+      "path": "audio/zh/mix_05/vevo.wav",
+      "sha256": "5278f49348817766f59b2df8332581d0aa5b56842ae5c317c4959e6b6f0c4981",
+      "duration_seconds": 6.36,
+      "questionnaire_path": "media/cases/mix_05/cand_3886250e95a423.wav"
+    },
+    {
+      "case_id": "falsetto_01",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/falsetto_01/source.wav",
+      "sha256": "c65e794620bec99a74374f1b2d64ca04a17123d68ab387032609c46681eb5d43",
+      "duration_seconds": 5.526349,
+      "questionnaire_path": "media/cases/falsetto_01/source.wav"
+    },
+    {
+      "case_id": "falsetto_01",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/falsetto_01/prosing.wav",
+      "sha256": "5f8729d96f02b25b079c9689872099bd8cd76b75fec42851245b21a66854bee4",
+      "duration_seconds": 5.54,
+      "questionnaire_path": "media/cases/falsetto_01/cand_b78022fa57c739.wav"
+    },
+    {
+      "case_id": "falsetto_01",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/falsetto_01/tcsinger.wav",
+      "sha256": "d7c5a1c3ac625ebdc94a5874d2ece4b9205e1fa05c4a91c10d7a1cb571d0a42a",
+      "duration_seconds": 4.448,
+      "questionnaire_path": "media/cases/falsetto_01/cand_87dea136d5d410.wav"
+    },
+    {
+      "case_id": "falsetto_01",
+      "language": "zh",
+      "model": "vevo",
+      "path": "audio/zh/falsetto_01/vevo.wav",
+      "sha256": "f901788e721c4dc4f5c0dee903db418cc86e5fe13795d104d54ba56516f5813c",
+      "duration_seconds": 5.56,
+      "questionnaire_path": "media/cases/falsetto_01/cand_8af5346bff0b4b.wav"
+    },
+    {
+      "case_id": "vibrato_04",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/vibrato_04/source.wav",
+      "sha256": "8c56a847db6797b7c84c8d2a05a2e1c1462c21b8b7994b8d1dacaabff6bc0bd9",
+      "duration_seconds": 3.529433,
+      "questionnaire_path": "media/cases/vibrato_04/source.wav"
+    },
+    {
+      "case_id": "vibrato_04",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/vibrato_04/prosing.wav",
+      "sha256": "fb3b2c954484bb4cdf3633c26cf275df9613abc1deb5af00fdfdc3cca1f07b3a",
+      "duration_seconds": 3.54,
+      "questionnaire_path": "media/cases/vibrato_04/cand_6379227b8590f9.wav"
+    },
+    {
+      "case_id": "vibrato_04",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/vibrato_04/tcsinger.wav",
+      "sha256": "d57c27a68fc26e39f05277b6a699fda3be2728c35f83ab59a10644cb7583ca46",
+      "duration_seconds": 2.309333,
+      "questionnaire_path": "media/cases/vibrato_04/cand_493a49b58c679a.wav"
+    },
+    {
+      "case_id": "vibrato_04",
+      "language": "zh",
+      "model": "vevo",
+      "path": "audio/zh/vibrato_04/vevo.wav",
+      "sha256": "1aa48426c97c58c56a0a2a68aed879acb0b0653184dc5ec318bc1a170e4f0c1c",
+      "duration_seconds": 4.04,
+      "questionnaire_path": "media/cases/vibrato_04/cand_d08473c29f22fc.wav"
+    },
+    {
+      "case_id": "gliss_03_hei",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/gliss_03_hei/source.wav",
+      "sha256": "9ea4f3689e12f97bff331a35fbe240780084e7f64ae7bf891341ddeeb486a600",
+      "duration_seconds": 4.063492,
+      "questionnaire_path": "media/cases/gliss_03_hei/source.wav"
+    },
+    {
+      "case_id": "gliss_03_hei",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/gliss_03_hei/prosing.wav",
+      "sha256": "5646c56d07187162cfe4f199a54657c9e2298c1f9b511a5afb0f43ca64f638d0",
+      "duration_seconds": 4.08,
+      "questionnaire_path": "media/cases/gliss_03_hei/cand_84954c6517aa57.wav"
+    },
+    {
+      "case_id": "gliss_03_hei",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/gliss_03_hei/tcsinger.wav",
+      "sha256": "031f26c6200d2618b5d7e78ee67ba858fe96c388462f608cae3c219a50aeef34",
+      "duration_seconds": 5.861333,
+      "questionnaire_path": "media/cases/gliss_03_hei/cand_545f020fae6e0f.wav"
+    },
+    {
+      "case_id": "gliss_03_hei",
+      "language": "zh",
+      "model": "vevo",
+      "path": "audio/zh/gliss_03_hei/vevo.wav",
+      "sha256": "2788fe7b2838e120ea23c83d736e172ca82f2ab34eb2841e78a2541551dcf06a",
+      "duration_seconds": 4.04,
+      "questionnaire_path": "media/cases/gliss_03_hei/cand_56479c16af8e41.wav"
+    },
+    {
+      "case_id": "combo_02_gumeng",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/combo_02_gumeng/source.wav",
+      "sha256": "6f44bce44b2dd55b71530bb80dad2c91829ff42c208f72baeeb341a6cfb536fd",
+      "duration_seconds": 6.339048,
+      "questionnaire_path": "media/cases/combo_02_gumeng/source.wav"
+    },
+    {
+      "case_id": "combo_02_gumeng",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/combo_02_gumeng/prosing.wav",
+      "sha256": "cf8cb0303ea6de3e2be9ee46b19d545a5e8a66c9567968ba4656be27bf80a379",
+      "duration_seconds": 6.34,
+      "questionnaire_path": "media/cases/combo_02_gumeng/cand_c35a1896a858f4.wav"
+    },
+    {
+      "case_id": "combo_02_gumeng",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/combo_02_gumeng/tcsinger.wav",
+      "sha256": "09df24b54f4ec15ba02d705bc524162124d4a5620105bfb6459ce11348c20b8c",
+      "duration_seconds": 3.802667,
+      "questionnaire_path": "media/cases/combo_02_gumeng/cand_ce7415b9b6a68f.wav"
+    },
+    {
+      "case_id": "combo_08_luoyeguigen",
+      "language": "zh",
+      "model": "source",
+      "path": "audio/zh/combo_08_luoyeguigen/source.wav",
+      "sha256": "83f3e510931a4ff1b026147548528ce18373f5d2c7425017c65c2311416133ff",
+      "duration_seconds": 5.688889,
+      "questionnaire_path": "media/cases/combo_08_luoyeguigen/source.wav"
+    },
+    {
+      "case_id": "combo_08_luoyeguigen",
+      "language": "zh",
+      "model": "prosinger",
+      "path": "audio/zh/combo_08_luoyeguigen/prosing.wav",
+      "sha256": "192cfc3a50a5f22c6fe0dd9b39efc7a30e8a4892fda3aa61d606f4bab79c569f",
+      "duration_seconds": 5.7,
+      "questionnaire_path": "media/cases/combo_08_luoyeguigen/cand_372408f4f46ad7.wav"
+    },
+    {
+      "case_id": "combo_08_luoyeguigen",
+      "language": "zh",
+      "model": "tcsinger",
+      "path": "audio/zh/combo_08_luoyeguigen/tcsinger.wav",
+      "sha256": "e01b16001274eda1a5a57e5f5198b3f9a1eb9e1f77883156a0aeeff0a835db2c",
+      "duration_seconds": 4.016,
+      "questionnaire_path": "media/cases/combo_08_luoyeguigen/cand_1480deda9dd7fa.wav"
+    }
+  ]
+}

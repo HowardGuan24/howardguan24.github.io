@@ -11,7 +11,8 @@
     <meta property="og:url" content="https://howardguan24.github.io/prosing-demo/">
     <title>ProSing · Singing Technique Conversion</title>
     <link rel="canonical" href="https://howardguan24.github.io/prosing-demo/">
-    <link rel="stylesheet" href="/assets/site.css">
+    <link rel="stylesheet" href="../assets/site.css">
+    <link rel="stylesheet" href="demos.css">
   </head>
   <body>
     <header class="site-header wrap">
@@ -71,17 +72,100 @@
       </section>
 
       <section class="content-section demos-section wrap" id="demos" aria-labelledby="demos-title">
-        <div class="section-label">03 / Listen</div>
-        <div class="section-content">
-          <h2 id="demos-title">Audio demos</h2>
-          <div class="coming-soon" role="status">
-            <span class="coming-soon-icon" aria-hidden="true">♫</span>
-            <div>
-              <h3>Examples are being prepared.</h3>
-              <p>Source and converted audio comparisons will appear here. This page will be updated at the same address.</p>
-            </div>
-          </div>
-        </div>
+        <!-- DEMOS:START -->
+<div class="demos-intro">
+  <div class="section-label">03 / Listen</div>
+  <div><h2 id="demos-title">Hear the control.</h2>
+    <p>Compare each source performance with the requested conversion. Explore timbral changes, localized pitch edits, and combined techniques in the examples below.</p>
+    <p class="listening-note">Highlighted lyrics indicate the edited regions. For timbral examples, the control applies to the entire excerpt. Expand any example to hear the baseline systems.</p>
+    <nav class="demo-language-nav" aria-label="Demo languages"><a href="#chinese-demos">Chinese samples <span aria-hidden="true">↓</span></a><a href="#english-demos">English samples <span aria-hidden="true">↓</span></a></nav>
+  </div>
+</div>
+<section class="language-demos" id="chinese-demos" aria-labelledby="chinese-title">
+  <div class="language-heading"><h3 id="chinese-title">Chinese samples</h3><span class="language-count">6 single-technique · 2 multi-technique</span></div>
+  <section class="technique-demos" aria-labelledby="chinese-single-title">
+  <div class="demo-group-heading"><h4 id="chinese-single-title">Single-technique control</h4><span>6 examples</span></div>
+  <div class="demo-grid"><article class="demo-card" id="pharyngeal_06">
+  <div class="demo-card-top"><span class="sample-family">Timbral control</span><span class="sample-number">01</span></div>
+  <h5>Pharyngeal voice</h5>
+  <span class="sample-scope">Entire excerpt</span>
+
+  <ul class="sample-instructions"><li>Apply pharyngeal voice throughout the excerpt.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="pharyngeal_06: Source"><source src="audio/zh/pharyngeal_06/source.wav" type="audio/wav"><a href="audio/zh/pharyngeal_06/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="pharyngeal_06: ProSing (ours)"><source src="audio/zh/pharyngeal_06/prosing.wav" type="audio/wav"><a href="audio/zh/pharyngeal_06/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="pharyngeal_06: TCSinger"><source src="audio/zh/pharyngeal_06/tcsinger.wav" type="audio/wav"><a href="audio/zh/pharyngeal_06/tcsinger.wav">Download audio</a></audio></div><div class="audio-player"><span class="audio-label">Vevo</span><audio controls preload="none" aria-label="pharyngeal_06: Vevo"><source src="audio/zh/pharyngeal_06/vevo.wav" type="audio/wav"><a href="audio/zh/pharyngeal_06/vevo.wav">Download audio</a></audio></div></div></details>
+</article>
+<article class="demo-card" id="breathy_03">
+  <div class="demo-card-top"><span class="sample-family">Timbral control</span><span class="sample-number">02</span></div>
+  <h5>Breathy voice</h5>
+  <span class="sample-scope">Entire excerpt</span>
+
+  <ul class="sample-instructions"><li>Apply breathy voice throughout the excerpt.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="breathy_03: Source"><source src="audio/zh/breathy_03/source.wav" type="audio/wav"><a href="audio/zh/breathy_03/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="breathy_03: ProSing (ours)"><source src="audio/zh/breathy_03/prosing.wav" type="audio/wav"><a href="audio/zh/breathy_03/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="breathy_03: TCSinger"><source src="audio/zh/breathy_03/tcsinger.wav" type="audio/wav"><a href="audio/zh/breathy_03/tcsinger.wav">Download audio</a></audio></div><div class="audio-player"><span class="audio-label">Vevo</span><audio controls preload="none" aria-label="breathy_03: Vevo"><source src="audio/zh/breathy_03/vevo.wav" type="audio/wav"><a href="audio/zh/breathy_03/vevo.wav">Download audio</a></audio></div></div></details>
+</article>
+<article class="demo-card" id="mix_05">
+  <div class="demo-card-top"><span class="sample-family">Timbral control</span><span class="sample-number">03</span></div>
+  <h5>Mixed voice</h5>
+  <span class="sample-scope">Entire excerpt</span>
+
+  <ul class="sample-instructions"><li>Apply mixed voice throughout the excerpt.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="mix_05: Source"><source src="audio/zh/mix_05/source.wav" type="audio/wav"><a href="audio/zh/mix_05/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="mix_05: ProSing (ours)"><source src="audio/zh/mix_05/prosing.wav" type="audio/wav"><a href="audio/zh/mix_05/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="mix_05: TCSinger"><source src="audio/zh/mix_05/tcsinger.wav" type="audio/wav"><a href="audio/zh/mix_05/tcsinger.wav">Download audio</a></audio></div><div class="audio-player"><span class="audio-label">Vevo</span><audio controls preload="none" aria-label="mix_05: Vevo"><source src="audio/zh/mix_05/vevo.wav" type="audio/wav"><a href="audio/zh/mix_05/vevo.wav">Download audio</a></audio></div></div></details>
+</article>
+<article class="demo-card" id="falsetto_01">
+  <div class="demo-card-top"><span class="sample-family">Timbral control</span><span class="sample-number">04</span></div>
+  <h5>Falsetto</h5>
+  <span class="sample-scope">Entire excerpt</span>
+
+  <ul class="sample-instructions"><li>Apply falsetto throughout the excerpt.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="falsetto_01: Source"><source src="audio/zh/falsetto_01/source.wav" type="audio/wav"><a href="audio/zh/falsetto_01/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="falsetto_01: ProSing (ours)"><source src="audio/zh/falsetto_01/prosing.wav" type="audio/wav"><a href="audio/zh/falsetto_01/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="falsetto_01: TCSinger"><source src="audio/zh/falsetto_01/tcsinger.wav" type="audio/wav"><a href="audio/zh/falsetto_01/tcsinger.wav">Download audio</a></audio></div><div class="audio-player"><span class="audio-label">Vevo</span><audio controls preload="none" aria-label="falsetto_01: Vevo"><source src="audio/zh/falsetto_01/vevo.wav" type="audio/wav"><a href="audio/zh/falsetto_01/vevo.wav">Download audio</a></audio></div></div></details>
+</article>
+<article class="demo-card" id="vibrato_04">
+  <div class="demo-card-top"><span class="sample-family">Pitch control</span><span class="sample-number">05</span></div>
+  <h5>Vibrato</h5>
+  <span class="sample-scope">Selected syllable</span>
+<p class="sample-lyrics" lang="zh">有期待<mark title="vibrato">会</mark>相见</p>
+  <ul class="sample-instructions"><li>“会”: add vibrato with a ±20-cent extent at 5 Hz.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="vibrato_04: Source"><source src="audio/zh/vibrato_04/source.wav" type="audio/wav"><a href="audio/zh/vibrato_04/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="vibrato_04: ProSing (ours)"><source src="audio/zh/vibrato_04/prosing.wav" type="audio/wav"><a href="audio/zh/vibrato_04/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="vibrato_04: TCSinger"><source src="audio/zh/vibrato_04/tcsinger.wav" type="audio/wav"><a href="audio/zh/vibrato_04/tcsinger.wav">Download audio</a></audio></div><div class="audio-player"><span class="audio-label">Vevo</span><audio controls preload="none" aria-label="vibrato_04: Vevo"><source src="audio/zh/vibrato_04/vevo.wav" type="audio/wav"><a href="audio/zh/vibrato_04/vevo.wav">Download audio</a></audio></div></div></details>
+</article>
+<article class="demo-card" id="gliss_03_hei">
+  <div class="demo-card-top"><span class="sample-family">Pitch control</span><span class="sample-number">06</span></div>
+  <h5>Glissando</h5>
+  <span class="sample-scope">Selected syllable</span>
+<p class="sample-lyrics" lang="zh">天特别亮夜特别的<mark title="glissando">黑</mark></p>
+  <ul class="sample-instructions"><li>“黑”: apply a rising pitch offset from −200 to 0 cents relative to the source.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="gliss_03_hei: Source"><source src="audio/zh/gliss_03_hei/source.wav" type="audio/wav"><a href="audio/zh/gliss_03_hei/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="gliss_03_hei: ProSing (ours)"><source src="audio/zh/gliss_03_hei/prosing.wav" type="audio/wav"><a href="audio/zh/gliss_03_hei/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="gliss_03_hei: TCSinger"><source src="audio/zh/gliss_03_hei/tcsinger.wav" type="audio/wav"><a href="audio/zh/gliss_03_hei/tcsinger.wav">Download audio</a></audio></div><div class="audio-player"><span class="audio-label">Vevo</span><audio controls preload="none" aria-label="gliss_03_hei: Vevo"><source src="audio/zh/gliss_03_hei/vevo.wav" type="audio/wav"><a href="audio/zh/gliss_03_hei/vevo.wav">Download audio</a></audio></div></div></details>
+</article></div>
+</section><section class="technique-demos" aria-labelledby="chinese-composite-title">
+  <div class="demo-group-heading"><h4 id="chinese-composite-title">Multi-technique control</h4><span>2 examples</span></div>
+  <div class="demo-grid"><article class="demo-card" id="combo_02_gumeng">
+  <div class="demo-card-top"><span class="sample-family">Overlapping techniques</span><span class="sample-number">07</span></div>
+  <h5>Breathy voice + falsetto</h5>
+  <span class="sample-scope">Selected phrase</span>
+<p class="sample-lyrics" lang="zh">任身后哭号嘶喊着也，<mark title="breathy voice + falsetto">追不上</mark></p>
+  <ul class="sample-instructions"><li>“追不上”: apply breathy voice and falsetto simultaneously.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="combo_02_gumeng: Source"><source src="audio/zh/combo_02_gumeng/source.wav" type="audio/wav"><a href="audio/zh/combo_02_gumeng/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="combo_02_gumeng: ProSing (ours)"><source src="audio/zh/combo_02_gumeng/prosing.wav" type="audio/wav"><a href="audio/zh/combo_02_gumeng/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="combo_02_gumeng: TCSinger"><source src="audio/zh/combo_02_gumeng/tcsinger.wav" type="audio/wav"><a href="audio/zh/combo_02_gumeng/tcsinger.wav">Download audio</a></audio></div></div></details>
+</article>
+<article class="demo-card" id="combo_08_luoyeguigen">
+  <div class="demo-card-top"><span class="sample-family">Sequential &amp; overlapping techniques</span><span class="sample-number">08</span></div>
+  <h5>Falsetto, pharyngeal voice + vibrato</h5>
+  <span class="sample-scope">Selected regions</span>
+<p class="sample-lyrics" lang="zh"><mark title="falsetto">不胜唏嘘</mark>，<mark title="pharyngeal voice">幻化成秋</mark><mark title="pharyngeal voice + vibrato">夜</mark></p>
+  <ul class="sample-instructions"><li>“不胜唏嘘”: falsetto.</li><li>“幻化成秋夜”: pharyngeal voice, with vibrato added on “夜”.</li></ul>
+  <div class="audio-pair"><div class="audio-player"><span class="audio-label">Source</span><audio controls preload="none" aria-label="combo_08_luoyeguigen: Source"><source src="audio/zh/combo_08_luoyeguigen/source.wav" type="audio/wav"><a href="audio/zh/combo_08_luoyeguigen/source.wav">Download audio</a></audio></div><div class="audio-player audio-player-primary"><span class="audio-label">ProSing (ours)</span><audio controls preload="none" aria-label="combo_08_luoyeguigen: ProSing (ours)"><source src="audio/zh/combo_08_luoyeguigen/prosing.wav" type="audio/wav"><a href="audio/zh/combo_08_luoyeguigen/prosing.wav">Download audio</a></audio></div></div>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair"><div class="audio-player"><span class="audio-label">TCSinger</span><audio controls preload="none" aria-label="combo_08_luoyeguigen: TCSinger"><source src="audio/zh/combo_08_luoyeguigen/tcsinger.wav" type="audio/wav"><a href="audio/zh/combo_08_luoyeguigen/tcsinger.wav">Download audio</a></audio></div></div></details>
+</article></div>
+</section>
+</section>
+<section class="language-demos language-demos-pending" id="english-demos" aria-labelledby="english-title">
+  <div class="language-heading"><h3 id="english-title">English samples</h3><span class="language-count">In preparation</span></div>
+  <p class="language-note">English examples are being prepared and will be added here.</p>
+</section>
+      <!-- DEMOS:END -->
       </section>
     </main>
 
@@ -90,6 +174,7 @@
       <a href="/">Back to homepage <span aria-hidden="true">↗</span></a>
     </footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="demos.js"></script>
     <!-- Cloudflare Web Analytics -->
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"b8576eddd77d4fb593236687926ec398"}'></script>
     <!-- End Cloudflare Web Analytics -->

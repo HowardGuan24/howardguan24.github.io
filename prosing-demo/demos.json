@@ -1,0 +1,90 @@
+{
+  "chinese": {
+    "single": [
+      {
+        "case_id": "pharyngeal_06",
+        "title": "Pharyngeal voice",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "instructions": ["Apply pharyngeal voice throughout the excerpt."]
+      },
+      {
+        "case_id": "breathy_03",
+        "title": "Breathy voice",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "instructions": ["Apply breathy voice throughout the excerpt."]
+      },
+      {
+        "case_id": "mix_05",
+        "title": "Mixed voice",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "instructions": ["Apply mixed voice throughout the excerpt."]
+      },
+      {
+        "case_id": "falsetto_01",
+        "title": "Falsetto",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "instructions": ["Apply falsetto throughout the excerpt."]
+      },
+      {
+        "case_id": "vibrato_04",
+        "title": "Vibrato",
+        "family": "Pitch control",
+        "scope": "Selected syllable",
+        "lyric_parts": [
+          {"text": "有期待"},
+          {"text": "会", "technique": "vibrato"},
+          {"text": "相见"}
+        ],
+        "instructions": ["“会”: add vibrato with a ±20-cent extent at 5 Hz."]
+      },
+      {
+        "case_id": "gliss_03_hei",
+        "title": "Glissando",
+        "family": "Pitch control",
+        "scope": "Selected syllable",
+        "lyric_parts": [
+          {"text": "天特别亮夜特别的"},
+          {"text": "黑", "technique": "glissando"}
+        ],
+        "instructions": ["“黑”: apply a rising pitch offset from −200 to 0 cents relative to the source."]
+      }
+    ],
+    "composite": [
+      {
+        "case_id": "combo_02_gumeng",
+        "title": "Breathy voice + falsetto",
+        "family": "Overlapping techniques",
+        "scope": "Selected phrase",
+        "lyric_parts": [
+          {"text": "任身后哭号嘶喊着也，"},
+          {"text": "追不上", "technique": "breathy voice + falsetto"}
+        ],
+        "instructions": ["“追不上”: apply breathy voice and falsetto simultaneously."]
+      },
+      {
+        "case_id": "combo_08_luoyeguigen",
+        "title": "Falsetto, pharyngeal voice + vibrato",
+        "family": "Sequential & overlapping techniques",
+        "scope": "Selected regions",
+        "lyric_parts": [
+          {"text": "不胜唏嘘", "technique": "falsetto"},
+          {"text": "，"},
+          {"text": "幻化成秋", "technique": "pharyngeal voice"},
+          {"text": "夜", "technique": "pharyngeal voice + vibrato"}
+        ],
+        "instructions": [
+          "“不胜唏嘘”: falsetto.",
+          "“幻化成秋夜”: pharyngeal voice, with vibrato added on “夜”."
+        ]
+      }
+    ]
+  },
+  "english": {
+    "single": [],
+    "composite": []
+  }
+}
