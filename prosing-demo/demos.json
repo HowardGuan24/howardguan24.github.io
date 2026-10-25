@@ -84,7 +84,91 @@
     ]
   },
   "english": {
-    "single": [],
-    "composite": []
+    "single": [
+      {
+        "case_id": "en_pharyngeal_01",
+        "title": "Pharyngeal voice",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "lyric_parts": [{"text": "I said don't mind, but what do you mean I am the one"}],
+        "instructions": ["Apply pharyngeal voice throughout the excerpt."]
+      },
+      {
+        "case_id": "en_breathy_01",
+        "title": "Breathy voice",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "lyric_parts": [{"text": "Take a sad song and make it better"}],
+        "instructions": ["Apply breathy voice throughout the excerpt."]
+      },
+      {
+        "case_id": "en_falsetto_03",
+        "title": "Falsetto",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "lyric_parts": [{"text": "Hey Jude, don't make it bad"}],
+        "instructions": ["Apply falsetto throughout the excerpt."]
+      },
+      {
+        "case_id": "en_mix_02",
+        "title": "Mixed voice",
+        "family": "Timbral control",
+        "scope": "Entire excerpt",
+        "lyric_parts": [{"text": "Hey Jude, don't make it bad"}],
+        "instructions": ["Apply mixed voice throughout the excerpt."]
+      },
+      {
+        "case_id": "en_vibrato_02",
+        "title": "Vibrato",
+        "family": "Pitch control",
+        "scope": "Selected word",
+        "lyric_parts": [{"text": "I "}, {"text": "feel", "technique": "vibrato"}, {"text": " you"}],
+        "instructions": ["“Feel”: add vibrato with a ±40-cent extent at 5 Hz."],
+        "baseline_note": "Original questionnaire baselines; only ProSing was regenerated with the 40-cent vibrato command.",
+        "audio_overrides": {
+          "prosinger": {
+            "path": "custom-audio/english-vibrato40/en_vibrato_02.wav",
+            "sha256": "e4a0771c1a03e2232048049255669e37e88570f43a49ec5e47423f37dd281c99",
+            "duration_seconds": 3.04,
+            "provenance": "custom-audio/english-vibrato40/provenance.json"
+          }
+        }
+      },
+      {
+        "case_id": "en_glissando_02",
+        "title": "Glissando",
+        "family": "Pitch control",
+        "scope": "Selected word",
+        "lyric_parts": [{"text": "Oh, see that "}, {"text": "girl", "technique": "glissando"}, {"text": ", watch that scene"}],
+        "instructions": ["“Girl”: apply a rising pitch offset from −200 to 0 cents relative to the source."]
+      }
+    ],
+    "composite": [
+      {
+        "case_id": "en_combo_01",
+        "title": "Breathy voice, vibrato + mixed voice",
+        "family": "Sequential & overlapping techniques",
+        "scope": "Selected words & phrase",
+        "lyric_parts": [
+          {"text": "Near", "technique": "breathy voice"}, {"text": ", "},
+          {"text": "far", "technique": "breathy voice + vibrato"}, {"text": ", "},
+          {"text": "wherever you are", "technique": "mixed voice"}
+        ],
+        "instructions": [
+          "“Near” and “far”: breathy voice.",
+          "“Far”: additionally apply vibrato with a ±40-cent extent at 5 Hz.",
+          "“Wherever you are”: mixed voice."
+        ],
+        "baseline_note": "Original questionnaire baseline; only ProSing was regenerated with the 40-cent vibrato command.",
+        "audio_overrides": {
+          "prosinger": {
+            "path": "custom-audio/english-vibrato40/en_combo_01.wav",
+            "sha256": "247a294acf2525c7192aa0723b7969de1b29fa4dc6bd03251b2d49a7c01cbb71",
+            "duration_seconds": 9.34,
+            "provenance": "custom-audio/english-vibrato40/provenance.json"
+          }
+        }
+      }
+    ]
   }
 }

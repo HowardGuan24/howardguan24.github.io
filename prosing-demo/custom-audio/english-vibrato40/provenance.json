@@ -1,0 +1,35 @@
+{
+  "purpose": "User-selected English demo regenerations; vibrato extent increased from ±20 to ±40 cents, confirmed after previews at ±30 and ±40 cents.",
+  "generated_at": "2026-10-25",
+  "checkpoint": "/home/howard/SSC/Prosinger/ckpts/pro_fm_finetune/final_train_speaker_replay/checkpoint/final_epoch-0100_step-0295416/pytorch_model.bin",
+  "model_config": "egs/svc/FlowMatchingTransformer/pro_fm_final_train_speaker_replay.json",
+  "generation_commit": "f185f19065e7016ec8b2c9a5c4a366be6e957b9c",
+  "seed": 20260905,
+  "flow_steps": 32,
+  "cfg": 1.0,
+  "vibrato_extent_cents": 40,
+  "vibrato_rate_hz": 5,
+  "prompt": "Unchanged original source first 3 seconds.",
+  "controls_verification": "Only f0_mod changed: 2 times the original 20-cent command and 4/3 times the reviewed 30-cent command. Technique frames, pitch-delta controls and pitch window are identical.",
+  "baseline_note": "Only ProSing was regenerated. Baseline audio remains from the original questionnaire.",
+  "server_run": "/home/howard/SSC/Prosinger/Sub_experiments/Final_testing/output/english_demo_vibrato/2026-10-25__40c-5hz-final295k",
+  "files": [
+    {
+      "case_id": "en_vibrato_02",
+      "path": "en_vibrato_02.wav",
+      "source": "NHSS/Data/M03/S11/Song/Song_3.wav",
+      "vibrato_region": "FEEL",
+      "duration_seconds": 3.04,
+      "sha256": "e4a0771c1a03e2232048049255669e37e88570f43a49ec5e47423f37dd281c99"
+    },
+    {
+      "case_id": "en_combo_01",
+      "path": "en_combo_01.wav",
+      "source": "NHSS/Data/M03/S11/Song/Song_8.wav",
+      "vibrato_region": "FAR",
+      "timbral_controls": "NEAR and FAR: breathy; WHEREVER YOU ARE: mixed voice.",
+      "duration_seconds": 9.34,
+      "sha256": "247a294acf2525c7192aa0723b7969de1b29fa4dc6bd03251b2d49a7c01cbb71"
+    }
+  ]
+}

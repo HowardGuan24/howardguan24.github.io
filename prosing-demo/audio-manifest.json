@@ -1,7 +1,7 @@
 {
   "questionnaire_repository": "HowardGuan24/prosinger-blind-listening",
   "questionnaire_revision": "1ec7e215e59a90fd06ba518b711e4306b72561f9",
-  "note": "Byte-identical copies of selected questionnaire audio; no cropping, resampling, or gain changes.",
+  "note": "Byte-identical copies of selected questionnaire audio or explicitly reviewed regenerations. Regenerated files record their source and provenance; no cropping, resampling, or gain changes are applied by this builder.",
   "selection": {
     "chinese": {
       "single": [
@@ -18,8 +18,17 @@
       ]
     },
     "english": {
-      "single": [],
-      "composite": []
+      "single": [
+        "en_pharyngeal_01",
+        "en_breathy_01",
+        "en_falsetto_03",
+        "en_mix_02",
+        "en_vibrato_02",
+        "en_glissando_02"
+      ],
+      "composite": [
+        "en_combo_01"
+      ]
     }
   },
   "audio_files": [
@@ -292,6 +301,255 @@
       "sha256": "e01b16001274eda1a5a57e5f5198b3f9a1eb9e1f77883156a0aeeff0a835db2c",
       "duration_seconds": 4.016,
       "questionnaire_path": "media/cases/combo_08_luoyeguigen/cand_1480deda9dd7fa.wav"
+    },
+    {
+      "case_id": "en_pharyngeal_01",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_pharyngeal_01/source.wav",
+      "sha256": "1fd6a9894163001da1d51f53f89f8a2f9b233cf9ea3d57f4ef283082caf958f3",
+      "duration_seconds": 5.15,
+      "questionnaire_path": "media/cases/en_pharyngeal_01/source.wav"
+    },
+    {
+      "case_id": "en_pharyngeal_01",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_pharyngeal_01/prosing.wav",
+      "sha256": "e7d4769ef2e7b558df8ae4bcdbe8f51beb67b40dbc3ea3ef62b22b8b0a12f42d",
+      "duration_seconds": 5.16,
+      "questionnaire_path": "media/cases/en_pharyngeal_01/cand_50320b3e44ace7.wav"
+    },
+    {
+      "case_id": "en_pharyngeal_01",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_pharyngeal_01/tcsinger.wav",
+      "sha256": "9edc451daa31e8cf93eee8b8fd16d331ae3a1ee9c33ca0d8fb580a2dc91bb00d",
+      "duration_seconds": 7.232,
+      "questionnaire_path": "media/cases/en_pharyngeal_01/cand_5c3b73eada24f6.wav"
+    },
+    {
+      "case_id": "en_pharyngeal_01",
+      "language": "en",
+      "model": "vevo",
+      "path": "audio/en/en_pharyngeal_01/vevo.wav",
+      "sha256": "96f4c2db2e1f9ee86f6db97b63530907d8deebdcebfd0b2207c09eb480695cc8",
+      "duration_seconds": 5.24,
+      "questionnaire_path": "media/cases/en_pharyngeal_01/cand_b4628dd884cf9a.wav"
+    },
+    {
+      "case_id": "en_breathy_01",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_breathy_01/source.wav",
+      "sha256": "23ea37b0dcacb9fa15f724d059b604ceb290694332abbd11d9a3e3f25cf12071",
+      "duration_seconds": 6.930021,
+      "questionnaire_path": "media/cases/en_breathy_01/source.wav"
+    },
+    {
+      "case_id": "en_breathy_01",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_breathy_01/prosing.wav",
+      "sha256": "72bd605f3ce5c4d5c52c328a199db2ea2bd061842bfa35afbddd52d794ce4af6",
+      "duration_seconds": 6.94,
+      "questionnaire_path": "media/cases/en_breathy_01/cand_c0c37385100c95.wav"
+    },
+    {
+      "case_id": "en_breathy_01",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_breathy_01/tcsinger.wav",
+      "sha256": "30e0557bd42079da65301a3bb60e8a792056d1f2bdfd4555d7026408324ab09f",
+      "duration_seconds": 8.954667,
+      "questionnaire_path": "media/cases/en_breathy_01/cand_310fb9d3d99368.wav"
+    },
+    {
+      "case_id": "en_breathy_01",
+      "language": "en",
+      "model": "vevo",
+      "path": "audio/en/en_breathy_01/vevo.wav",
+      "sha256": "8c2351d8e8b1a2af9814596b738f7cc5d90a45301864063bd5141c690a3661bd",
+      "duration_seconds": 6.92,
+      "questionnaire_path": "media/cases/en_breathy_01/cand_c934ed5e0064a3.wav"
+    },
+    {
+      "case_id": "en_falsetto_03",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_falsetto_03/source.wav",
+      "sha256": "2121538cbe4d79d8a701aaf95681c46c057afc4809b372212e84a4e6aa987459",
+      "duration_seconds": 6.21,
+      "questionnaire_path": "media/cases/en_falsetto_03/source.wav"
+    },
+    {
+      "case_id": "en_falsetto_03",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_falsetto_03/prosing.wav",
+      "sha256": "0665e2ed64f9071a1467a19f3bcbd023825e0c6efbba2fd96f6100e50754b490",
+      "duration_seconds": 6.22,
+      "questionnaire_path": "media/cases/en_falsetto_03/cand_7f6588112b3e2c.wav"
+    },
+    {
+      "case_id": "en_falsetto_03",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_falsetto_03/tcsinger.wav",
+      "sha256": "a462cbb71736a0efa5899a312cc509e2115bc95ad73afd5333f261ef401e8239",
+      "duration_seconds": 8.832,
+      "questionnaire_path": "media/cases/en_falsetto_03/cand_04d2abf3425466.wav"
+    },
+    {
+      "case_id": "en_falsetto_03",
+      "language": "en",
+      "model": "vevo",
+      "path": "audio/en/en_falsetto_03/vevo.wav",
+      "sha256": "81bc282d53980f3fd146ca00a301fb67cc6e6036a765c0780095ac13cf04e431",
+      "duration_seconds": 6.2,
+      "questionnaire_path": "media/cases/en_falsetto_03/cand_fb1bcb11187f16.wav"
+    },
+    {
+      "case_id": "en_mix_02",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_mix_02/source.wav",
+      "sha256": "a17ea1cdd68027aa21292c9df2f5b95c9ba5fa8d0e11bccb15b83452032823f3",
+      "duration_seconds": 5.900021,
+      "questionnaire_path": "media/cases/en_mix_02/source.wav"
+    },
+    {
+      "case_id": "en_mix_02",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_mix_02/prosing.wav",
+      "sha256": "f5b7c7061e07fdfc197ed9f904b07510722beffe1eb7b56bb24cacb0cf1ed6e5",
+      "duration_seconds": 5.92,
+      "questionnaire_path": "media/cases/en_mix_02/cand_e75209952907f0.wav"
+    },
+    {
+      "case_id": "en_mix_02",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_mix_02/tcsinger.wav",
+      "sha256": "1a4f7d355027c22defb9f32f6649d320d10cfe171a2ca89f85d89d02322538b7",
+      "duration_seconds": 21.317333,
+      "questionnaire_path": "media/cases/en_mix_02/cand_f1064010cab659.wav"
+    },
+    {
+      "case_id": "en_mix_02",
+      "language": "en",
+      "model": "vevo",
+      "path": "audio/en/en_mix_02/vevo.wav",
+      "sha256": "288a44a7da829dc7631ef30e12090e93628b03fba2ac4dc0b5def2a58d5dc761",
+      "duration_seconds": 5.88,
+      "questionnaire_path": "media/cases/en_mix_02/cand_02e51a1207ef52.wav"
+    },
+    {
+      "case_id": "en_vibrato_02",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_vibrato_02/source.wav",
+      "sha256": "62e750439db4886818b5fffad9ff6becfe500f7e1e7b1cf6036f5e9c93ce8ead",
+      "duration_seconds": 3.030021,
+      "questionnaire_path": "media/cases/en_vibrato_02/source.wav"
+    },
+    {
+      "case_id": "en_vibrato_02",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_vibrato_02/prosing.wav",
+      "sha256": "e4a0771c1a03e2232048049255669e37e88570f43a49ec5e47423f37dd281c99",
+      "duration_seconds": 3.04,
+      "questionnaire_path": null,
+      "source": "custom-audio/english-vibrato40/en_vibrato_02.wav",
+      "provenance": "custom-audio/english-vibrato40/provenance.json",
+      "replaces_questionnaire_path": "media/cases/en_vibrato_02/cand_96815d8b25d5c7.wav"
+    },
+    {
+      "case_id": "en_vibrato_02",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_vibrato_02/tcsinger.wav",
+      "sha256": "91e2a52ce8374e9380ca649c631d34ce7534d1615f619691689677e44e8257b3",
+      "duration_seconds": 3.328,
+      "questionnaire_path": "media/cases/en_vibrato_02/cand_76cab69a85c583.wav"
+    },
+    {
+      "case_id": "en_vibrato_02",
+      "language": "en",
+      "model": "vevo",
+      "path": "audio/en/en_vibrato_02/vevo.wav",
+      "sha256": "e612f3b370d6bd21de89f09eee8f8dbc96ed52e336eed6666c336e1bc5256b75",
+      "duration_seconds": 3.96,
+      "questionnaire_path": "media/cases/en_vibrato_02/cand_9194a94eb69767.wav"
+    },
+    {
+      "case_id": "en_glissando_02",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_glissando_02/source.wav",
+      "sha256": "f7d9e8df91881e2b298e2c4830566df14ef1e2b1e1f23864e941cc224fefe878",
+      "duration_seconds": 5.160021,
+      "questionnaire_path": "media/cases/en_glissando_02/source.wav"
+    },
+    {
+      "case_id": "en_glissando_02",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_glissando_02/prosing.wav",
+      "sha256": "3a0ab4fbaf5df698d97ade5b8650df9ab4b5a4604faaae5da2780ce8110cb7ce",
+      "duration_seconds": 5.18,
+      "questionnaire_path": "media/cases/en_glissando_02/cand_4f2198e4b3153d.wav"
+    },
+    {
+      "case_id": "en_glissando_02",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_glissando_02/tcsinger.wav",
+      "sha256": "7ad0d9c8b41888fbd6b2905fce8dba14fd2a1fcb1fd5146bc2b6dfacf2cd6894",
+      "duration_seconds": 5.861333,
+      "questionnaire_path": "media/cases/en_glissando_02/cand_a23d57cfa74430.wav"
+    },
+    {
+      "case_id": "en_glissando_02",
+      "language": "en",
+      "model": "vevo",
+      "path": "audio/en/en_glissando_02/vevo.wav",
+      "sha256": "851705e656f1e176d4017c8821121e3723ce9009f7710f031e4d47730fd74cce",
+      "duration_seconds": 5.16,
+      "questionnaire_path": "media/cases/en_glissando_02/cand_fb253ad5a06390.wav"
+    },
+    {
+      "case_id": "en_combo_01",
+      "language": "en",
+      "model": "source",
+      "path": "audio/en/en_combo_01/source.wav",
+      "sha256": "aa1775ac23c2f600d9775037ed937d771aa5f7af0bb32c05db3772c01ebb3991",
+      "duration_seconds": 9.320021,
+      "questionnaire_path": "media/cases/en_combo_01/source.wav"
+    },
+    {
+      "case_id": "en_combo_01",
+      "language": "en",
+      "model": "prosinger",
+      "path": "audio/en/en_combo_01/prosing.wav",
+      "sha256": "247a294acf2525c7192aa0723b7969de1b29fa4dc6bd03251b2d49a7c01cbb71",
+      "duration_seconds": 9.34,
+      "questionnaire_path": null,
+      "source": "custom-audio/english-vibrato40/en_combo_01.wav",
+      "provenance": "custom-audio/english-vibrato40/provenance.json",
+      "replaces_questionnaire_path": "media/cases/en_combo_01/cand_92b31a7c62e84a.wav"
+    },
+    {
+      "case_id": "en_combo_01",
+      "language": "en",
+      "model": "tcsinger",
+      "path": "audio/en/en_combo_01/tcsinger.wav",
+      "sha256": "4e4db5df09da806c757d1dd4c1cc927617f3c0fbe20d144bfa16528b61c0a8bf",
+      "duration_seconds": 8.837333,
+      "questionnaire_path": "media/cases/en_combo_01/cand_7963932186e6b4.wav"
     }
   ]
 }

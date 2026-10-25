@@ -16,7 +16,9 @@ The current selection is maintained in `prosing-demo/demos.json`. To rebuild the
 python3 prosing-demo/prepare_demos.py --library /absolute/path/to/questionnaire_2026-10-25
 ```
 
-The generator updates only the marked demo block in `prosing-demo/index.html` and writes `prosing-demo/audio-manifest.json` with the original questionnaire revision and audio checksums. Chinese examples appear first; the English selection is currently empty while new samples are prepared. Source and ProSing comparisons appear immediately, with baseline audio under expandable comparisons. All players use `preload="none"`.
+The generator updates only the marked demo block in `prosing-demo/index.html` and writes `prosing-demo/audio-manifest.json` with the original questionnaire revision and audio checksums. Chinese examples appear first (six single-technique, two composite), followed by English examples (six single-technique, one composite; a second composite is not yet selected). Source and ProSing comparisons appear immediately, with baseline audio under expandable comparisons. All players use `preload="none"`.
+
+Reviewed regenerations can be specified per model using `audio_overrides` in `demos.json`. Their source WAVs and provenance are retained under `prosing-demo/custom-audio/`, and the generator verifies their checksums just like questionnaire audio. The English `en_vibrato_02` and `en_combo_01` ProSing outputs use the approved ±40-cent, 5-Hz vibrato versions. Their baseline audio is unchanged from the questionnaire, as noted beside the baseline players. Do not replace files in the original questionnaire library to update public demos.
 
 ## Visitor analytics
 

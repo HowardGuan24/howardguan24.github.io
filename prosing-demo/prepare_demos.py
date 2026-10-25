@@ -52,6 +52,10 @@ def render_case(case: dict[str, Any], audio: dict[str, str], number: int, langua
         render_player(audio[method], MODEL_LABELS[method], case['case_id'])
         for method in ('tcsinger', 'vevo') if method in audio
     )
+    baseline_note = (
+        f'<p class="listening-note">{escape(case["baseline_note"])}</p>'
+        if case.get('baseline_note') else ''
+    )
     return f'''<article class="demo-card" id="{escape(case['case_id'])}">
   <div class="demo-card-top"><span class="sample-family">{escape(case['family'])}</span><span class="sample-number">{number:02d}</span></div>
   <h5>{escape(case['title'])}</h5>
@@ -59,7 +63,7 @@ def render_case(case: dict[str, Any], audio: dict[str, str], number: int, langua
 {lyrics}
   <ul class="sample-instructions">{instructions}</ul>
   <div class="audio-pair">{primary_audio}</div>
-  <details class="baseline-comparisons"><summary>Compare with baselines</summary><div class="audio-pair">{baseline_audio}</div></details>
+  <details class="baseline-comparisons"><summary>Compare with baselines</summary>{baseline_note}<div class="audio-pair">{baseline_audio}</div></details>
 </article>'''
 
 
@@ -73,8 +77,9 @@ def render_section(language_key: str, selection: dict[str, Any], cards: dict[str
     groups = []
     for kind, heading in (('single', 'Single-technique control'), ('composite', 'Multi-technique control')):
         sample_cards = '\n'.join(cards[case['case_id']] for case in selection[kind])
+        count = len(selection[kind])
         groups.append(f'''<section class="technique-demos" aria-labelledby="{language_key}-{kind}-title">
-  <div class="demo-group-heading"><h4 id="{language_key}-{kind}-title">{heading}</h4><span>{len(selection[kind])} examples</span></div>
+  <div class="demo-group-heading"><h4 id="{language_key}-{kind}-title">{heading}</h4><span>{count} {'example' if count == 1 else 'examples'}</span></div>
   <div class="demo-grid">{sample_cards}</div>
 </section>''')
     counts = f'{len(selection["single"])} single-technique · {len(selection["composite"])} multi-technique'
@@ -99,8 +104,8 @@ def main() -> None:
         section = selection[language_key]
         if section['single'] and len(section['single']) != 6:
             raise ValueError(f'{language_key}: expected six single-technique examples')
-        if section['composite'] and len(section['composite']) != 2:
-            raise ValueError(f'{language_key}: expected two multi-technique examples')
+        if len(section['composite']) > 2:
+            raise ValueError(f'{language_key}: expected at most two multi-technique examples')
         for number, case in enumerate(section['single'] + section['composite'], start=1):
             case_id = case['case_id']
             if case_id in used_cases:
@@ -117,21 +122,30 @@ def main() -> None:
                     continue
                 item = source_items[method]
                 source = args.library / item['path']
-                if digest_file(source) != item['sha256']:
+                override = case.get('audio_overrides', {}).get(method)
+                if override:
+                    # Keep reviewed regenerations separate from the immutable questionnaire archive.
+                    source = (PAGE_ROOT / override['path']).resolve()
+                    if not source.is_relative_to(PAGE_ROOT.resolve()):
+                        raise ValueError(f'Override must stay inside the demo directory: {source}')
+                metadata = override or item
+                if digest_file(source) != metadata['sha256']:
                     raise ValueError(f'Local audio changed: {source}')
                 filename = 'source.wav' if method == 'source' else MODEL_FILENAMES[method]
                 relative_path = f'audio/{language}/{case_id}/{filename}'
                 destination = PAGE_ROOT / relative_path
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, destination)
-                if digest_file(destination) != item['sha256']:
+                if digest_file(destination) != metadata['sha256']:
                     raise ValueError(f'Copied audio hash mismatch: {destination}')
                 paths[method] = relative_path
                 copied_files.append({
                     'case_id': case_id, 'language': language, 'model': method,
-                    'path': relative_path, 'sha256': item['sha256'],
-                    'duration_seconds': item['duration_seconds'],
-                    'questionnaire_path': item['original_path'],
+                    'path': relative_path, 'sha256': metadata['sha256'],
+                    'duration_seconds': metadata['duration_seconds'],
+                    'questionnaire_path': None if override else item['original_path'],
+                    **({'source': override['path'], 'provenance': override['provenance'],
+                        'replaces_questionnaire_path': item['original_path']} if override else {}),
                 })
             cards[case_id] = render_case(case, paths, number, language)
 
@@ -156,7 +170,7 @@ def main() -> None:
     provenance = {
         'questionnaire_repository': library_manifest['repository'],
         'questionnaire_revision': library_manifest['revision'],
-        'note': 'Byte-identical copies of selected questionnaire audio; no cropping, resampling, or gain changes.',
+        'note': 'Byte-identical copies of selected questionnaire audio or explicitly reviewed regenerations. Regenerated files record their source and provenance; no cropping, resampling, or gain changes are applied by this builder.',
         'selection': {key: {kind: [case['case_id'] for case in selection[key][kind]] for kind in ('single', 'composite')} for key in selection},
         'audio_files': copied_files,
     }
