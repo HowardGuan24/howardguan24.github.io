@@ -34,7 +34,7 @@ def render_player(path: str, label: str, case_id: str, primary: bool = False) ->
         f'<div class="audio-player{extra_class}"><span class="audio-label">{escape(label)}</span>'
         f'<audio controls preload="none" aria-label="{escape(case_id)}: {escape(label)}">'
         f'<source src="{escape(path)}" type="audio/wav">'
-        f'<a href="{escape(path)}">Download audio</a></audio></div>'
+        'Your browser does not support audio playback.</audio></div>'
     )
 
 
@@ -149,12 +149,17 @@ def main() -> None:
                 })
             cards[case_id] = render_case(case, paths, number, language)
 
-    content = '''<div class="demos-intro">
-  <div class="section-label">03 / Listen</div>
-  <div><h2 id="demos-title">Hear the control.</h2>
-    <p>Compare each source performance with the requested conversion. Explore timbral changes, localized pitch edits, and combined techniques in the examples below.</p>
-    <p class="listening-note">Highlighted lyrics indicate the edited regions. For timbral examples, the control applies to the entire excerpt. Expand any example to hear the baseline systems.</p>
-    <nav class="demo-language-nav" aria-label="Demo languages"><a href="#chinese-demos">Chinese samples <span aria-hidden="true">↓</span></a><a href="#english-demos">English samples <span aria-hidden="true">↓</span></a></nav>
+    sample_count = sum(len(section[kind]) for section in selection.values() for kind in ('single', 'composite'))
+    content = f'''<div class="demos-intro">
+  <div class="section-label">The demos</div>
+  <div><h2 id="demos-title">Listening guide</h2>
+    <p>The {sample_count} examples below demonstrate single-technique and multi-technique control in Chinese and English. Both language sets are shown in full on this page.</p>
+    <ol class="listening-steps">
+      <li>Listen to <strong>Source</strong>, then <strong>ProSing (ours)</strong>, to compare the original and converted performances.</li>
+      <li>Read the instruction above each player. Highlighted lyrics identify locally edited regions; “Entire excerpt” means the technique is requested throughout the clip.</li>
+      <li>Open <strong>Compare with baselines</strong> to hear TCSinger and, where available, Vevo without leaving the page.</li>
+    </ol>
+    <p class="listening-note">Headphones are recommended. Playing a new recording pauses the previous one. Pitch-control values describe the requested command, not a measurement of the generated output.</p>
   </div>
 </div>'''
     content += '\n' + '\n'.join(render_section(key, selection[key], cards) for key in ('chinese', 'english'))

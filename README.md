@@ -2,6 +2,8 @@
 
 Static GitHub Pages site for `https://howardguan24.github.io/` and the ProSing project page at `https://howardguan24.github.io/prosing-demo/`.
 
+The ProSing demo is a standalone, English-language single page: project description, supported techniques, listening guide, then all Chinese and English samples. It has no navigation links, homepage links, or language-jump links. Baseline comparisons expand inline; the separate personal homepage is unchanged.
+
 ## Publishing
 
 GitHub Pages publishes from the `main` branch, repository root. Edits to `index.html`, `prosing-demo/index.html`, or `assets/site.css` are published after a push to `main`.
